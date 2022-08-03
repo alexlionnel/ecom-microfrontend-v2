@@ -26,9 +26,7 @@ export default () => {
               <Route path='/auth'>
                 <AuthAppLazy onSignIn={() => setIsSignedIn(true)} />
               </Route>
-              <Route path='/'>
-                <MarketingAppLazy />
-              </Route>
+              <Route path='/' component={MarketingAppLazy} />
             </Switch>
           </Suspense>
         </div>
